@@ -2,8 +2,8 @@
 
 This repository contains **Data Structures and Algorithms (DSA) solutions in Java**, covering a wide range of topics including **arrays, strings, sorting, searching, recursion, linked lists, stacks, queues, trees, graphs, and dynamic programming**.
 
-## 📌 Features
-✅ **LeetCode, CodeChef, and HackerRank problems**  
+## 📌 Features 
+✅ **Basic code **
 ✅ **Sorting & Searching algorithms**  
 ✅ **DSA concepts for interviews & competitive programming**  
 ✅ **Optimized Java solutions with comments & explanations**  
@@ -31,24 +31,12 @@ This repository contains **Data Structures and Algorithms (DSA) solutions in Jav
    java Filename
    ```
 
-## 📂 Folder Structure
-```
-Java-DSA/
-│-- src/
-│   ├── arrays/
-│   ├── linkedlist/
-│   ├── stack_queue/
-│   ├── trees_graphs/
-│   ├── sorting_searching/
-│   ├── dynamic_programming/
-│-- README.md
-```
+
 
 ## 📢 Contributions
 Contributions are welcome! Feel free to open issues and submit pull requests. 🚀
 
-## 📜 License
-This project is **open-source** and available under the **MIT License**.
+
 
 ---
 
