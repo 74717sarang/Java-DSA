@@ -89,6 +89,7 @@ public class Palidrome {
 		System.out.println("Using Recursion");
 		System.out.println(Recursion(str, 0, str.length() - 1));
 		System.out.println(direct(str));
+		
 		System.out.println("useStack ");
 		System.out.println(usestack(str));
 
