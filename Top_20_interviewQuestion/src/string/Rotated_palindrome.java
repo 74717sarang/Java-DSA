@@ -19,7 +19,9 @@ public class Rotated_palindrome {
 	public static boolean isRotatedPalindrome(String s) {
 
 		String add = s + s;
+		// Concatenation helps in generating rotations
 
+        // Check all rotations using substrings
 		for (int i = 0; i < s.length(); i++) {
 			String rotated = add.substring(i, i + s.length());
 			if (isPalidrome(rotated))
