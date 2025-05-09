@@ -1,6 +1,5 @@
 package com.newtest;
 
-import java.util.Iterator;
 
 public class Start {
 
@@ -79,16 +78,15 @@ public class Start {
 		
 		
 		
-		int year=2000;
+		int year=2001;
 		
-		System.out.println(findLeep(year));
+		System.out.println("leepyear:: "+findLeep(year));
 		
 		
 	}
 
 	private static boolean findLeep(int year) {
 
-		
-		return null;
+		return year%4==0&&year%100!=0||year%400==0;
 	}
 }
