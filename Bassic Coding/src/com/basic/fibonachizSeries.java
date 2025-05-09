@@ -5,7 +5,7 @@ public class fibonachizSeries {
 	
 	public static void main(StringAll[] args) {
 		
-		int num1=0,num3,num2=1;
+		int num1=0,num2=1,num3;
 		
 		 System.out.print("Series:"+num1+","+num2);
 		

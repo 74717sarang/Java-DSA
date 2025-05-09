@@ -46,9 +46,11 @@ public class Start {
 		System.out.println();
 		
 		int n1=0;
-		int n2=1;
+		int n2
+		=1;
 		int n3;
 		
+		System.out.println("fibonachi::");
 		System.out.print(n1+" ");
 		no=5;
 		for(int i=0;i<no;i++) {
@@ -57,5 +59,36 @@ public class Start {
 		n1=n2;
 		n2=n3;
 		}
+		System.out.println();
+		
+		int []arr= {1,5,3,9,8,2,7};
+		int max=0;
+		for(int i=0;i<arr.length;i++) {
+			max=max<arr[i]? arr[i]: max;
+		}
+		System.out.println("max ele: "+max);
+		int secmax = 0,m3=0;
+		
+		for(int i=0;i<arr.length;i++) {
+			if (arr[i]>secmax && max > arr[i]) {
+			secmax=arr[i]; 	
+			}
+		
+		}
+		System.out.println("secound high: "+secmax);
+		
+		
+		
+		int year=2000;
+		
+		System.out.println(findLeep(year));
+		
+		
+	}
+
+	private static boolean findLeep(int year) {
+
+		
+		return null;
 	}
 }
