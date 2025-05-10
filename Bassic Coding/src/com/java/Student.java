@@ -6,7 +6,9 @@ public class Student {
 	String name;
 	String no;
 	double fee;
-
+	
+//    int test=10;
+    
 	public Student() {
 
 	}

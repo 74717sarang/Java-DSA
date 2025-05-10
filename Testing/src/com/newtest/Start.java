@@ -103,8 +103,15 @@ public class Start {
 		
 		
 		Scanner sc=new Scanner(System.in);
-		int prime =sc.nextInt();
 		System.out.println("enter prime no: ");
+		int prime =sc.nextInt();
+
+		for(int i=2;i<Math.sqrt(prime);i++) {
+			if(prime%i==0) {
+				System.out.println("not prime");
+			} 
+			
+		}
 		
 	}
 

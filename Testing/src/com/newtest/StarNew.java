@@ -1,5 +1,5 @@
 
-package com.star;
+package com.newtest;
 
 import java.util.Scanner;
 
