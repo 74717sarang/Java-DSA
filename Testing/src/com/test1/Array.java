@@ -47,10 +47,13 @@ public class Array {
 	        Scanner scan = new Scanner(System.in);
 	        int array_length = Integer.parseInt(scan.nextLine().trim());
 	        List<Integer> arr = new ArrayList<>(array_length);
+//	        for (int j = 0; j < array_length; j++) {
+//	            arr.add(Integer.parseInt(scan.nextLine().trim()));
+//	        }
+
 	        for (int j = 0; j < array_length; j++) {
 	            arr.add(Integer.parseInt(scan.nextLine().trim()));
 	        }
-
 	        int result = findPrime(array_length, arr);
 	        System.out.println(result);
 	    }

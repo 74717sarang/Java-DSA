@@ -8,6 +8,9 @@ public class test1 {
 		
 		
 		
+		
+		
+		
 
 //		for (char ch : str.toCharArray()) {
 //			if (ch != ' ') {
