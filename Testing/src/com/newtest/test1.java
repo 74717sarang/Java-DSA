@@ -5,6 +5,9 @@ public class test1 {
 	public static void main(String[] args) {
 		String str = "abcaaawel wel wel z";
 		int[] arr = new int[27];
+		
+		
+		
 
 //		for (char ch : str.toCharArray()) {
 //			if (ch != ' ') {
