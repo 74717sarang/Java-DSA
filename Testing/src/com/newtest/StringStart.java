@@ -87,6 +87,15 @@ public class StringStart {
 		System.out.println("MaxKey: " + ch + ", count: " + max);
 
 	}
+	
+	private static int StringtoInteger(String str) {
+        int num=0;
+        for(char ch:str.toCharArray()) {
+      	  num=num*10+(ch-'0');
+        }
+		
+		return num;
+	}
 
 	public static void main(String[] args) {
 
@@ -106,8 +115,13 @@ public class StringStart {
 		findCharCount(str);
 		System.out.println("Use hashMap:: ");
 		findCharCountWithMap(str);
+		
+		str="123";
+		System.out.println(StringtoInteger(str));
 
 	}
+
+	
 
 	
 	
