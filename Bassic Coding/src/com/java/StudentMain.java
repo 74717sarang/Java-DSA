@@ -28,6 +28,8 @@ public class StudentMain {
 //			System.out.println(s.toString());
 //		}
 
+//		System.out.println();
+//		list.forEach(i->System.out.println(i));
 		
 		// for String use compareTo
 		// for int ise Integer.compare(a.getId,...)
@@ -37,8 +39,8 @@ public class StudentMain {
 		
 	
 		
-		// for String use compareTo
-				// for int ise Integer.compare(a.getId,...)
+		// for String use compare
+				// for int is Integer.compare(a.getId,...)
 				System.out.println("Collection Sort ID(int)...");
 		         Collections.sort(list,(a,b)->Integer.compare(a.getId(), b.getId()) ); 
 				list.forEach(System.out::println); 

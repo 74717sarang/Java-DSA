@@ -1,24 +1,22 @@
 package com.newtest;
 
 public class SecoundLarge {
-	private static int  findSecoundSmallestEle(int[] arr) {
-
-		int min=1110;
-		int secondmin=1110;
-		
-		for(int i:arr) {
-			if(i<min) {
-			secondmin=min;
-			min=i;
-			}
-			else if(min<i && i<secondmin
-					) {
-				secondmin=i;
-			}
-		}
-		
-		return secondmin;
-	}
+//	private static int findSecoundSmallestEle(int[] arr) {
+//
+//		int min = 1110;
+//		int secondmin = 110;
+//
+//		for (int i : arr) {
+//			if (i < min) {
+//				secondmin = min;
+//				min = i;
+//			} else if (min < i && i < secondmin) {
+//				secondmin = i;
+//			}
+//		}
+//
+//		return secondmin;
+//	}
 
 	private static int findSecoundLargestEle(int[] arr) {
 		int max = 0;
@@ -28,9 +26,8 @@ public class SecoundLarge {
 			if (i > max) {
 				secoundmax = max;
 				max = i;
-			}
-			else if(max >i && secoundmax <i) {
-				secoundmax=i;
+			} else if (max > i && secoundmax < i) {
+				secoundmax = i;
 			}
 		}
 
@@ -43,7 +40,7 @@ public class SecoundLarge {
 		System.out.println("SecoundLargestElement=" + findSecoundLargestEle(arr));
 		// 8
 
-		System.out.println("SecoundSmallestElement=" + findSecoundSmallestEle(arr));
+//		System.out.println("SecoundSmallestElement=" + findSecoundSmallestEle(arr));
 		// 2
 	}
 
