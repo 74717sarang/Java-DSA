@@ -22,6 +22,8 @@ public class BasicTest {
 
 		}
 		System.out.println(s);
+		
+		System.out.println("cha1 "+changer1(str));
 	}
 
 	public static String changer(String str) {
@@ -39,6 +41,22 @@ public class BasicTest {
 		return s5;
 	}
 
+	public static String changer1(String str) {
+		
+		String s="";
+		for(String i:str.split(" ")) {
+			s+=i.substring(0,1).toUpperCase()+i.substring(1)+" ";
+		}
+		
+		
+		return s;
+	}
+
+	
+	
+	
+	
+	
 	public static String convert(String s) {
 
 		if (s == null && s.length() == 0)
