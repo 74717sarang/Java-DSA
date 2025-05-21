@@ -11,9 +11,9 @@ public class Braccket {
 		int count=0;
 		  char[]ch=s.toCharArray();
 		
-			for(int j=0;j<ch.length;j++) {
-			   if(s.charAt(j)=='(') {
-				   if(s.charAt(j+1)==')') {
+			for(int i=0;i<ch.length;i++) {
+			   if(s.charAt(i)=='(') {
+				   if(s.charAt(i+1)==')') {
 					 count++;   
 				   }
 			   }

@@ -20,7 +20,8 @@ public class CircularQueue {
 	}
 	
 	public boolean isFull() {
-		return ((rear+1)%size==front)|| (front==-1 &&rear==size-1);
+//		return ((rear+1)%size==front)|| (front==-1 &&rear==size-1);
+		return front==((rear+1)%size);
 	}
 	
 	
