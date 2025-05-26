@@ -21,7 +21,6 @@ public class Palidrome {
 			left++;
 			right--;
 		}
-
 		return true;
 	}
 

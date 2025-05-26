@@ -15,7 +15,6 @@ public class Brackets {
 
 				if (stack.isEmpty() || stack.pop() != '(')
 					return false;
-
 			}
 		}
 		return stack.isEmpty();

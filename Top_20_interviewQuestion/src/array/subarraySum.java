@@ -33,6 +33,7 @@ public class subarraySum {
 		Map<Integer, Integer>map=new HashMap<>();
 		int left=0,sum=0;
 		
+//		1, 4, 20, 3, 10, 5
 		for(int right=0;right<arr.length;right++) {
 			sum+=arr[right];
 			
