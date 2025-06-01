@@ -2,7 +2,7 @@ package string;
 
 public class Rotated_palindrome {
 
-//	Check if a string is a rotated palindrome or not
+//	Check if a string is a  palindrome or not
 
 	public static boolean isPalidrome(String s) {
 		int left = 0, right = s.length()-1;
