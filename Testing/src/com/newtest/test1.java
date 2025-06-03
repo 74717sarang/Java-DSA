@@ -6,8 +6,7 @@ public class test1 {
 		String str = "abcaaawel wel wel z";
 		int[] arr = new int[27];
 		
-		
-		
+	
 		
 		
 		

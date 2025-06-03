@@ -7,6 +7,11 @@ import java.util.Set;
 public class IntersectionArray {
 // Q6: Write a java program to find the intersection of two arrays?
 
+	// class name and methode name is same it gives only wronging
+	public static int IntersectionArray() {
+		return 1;
+	}
+
 	private static int findIntersection(int[] arr1, int[] arr2) {
 
 		int inter = 0;
@@ -46,6 +51,7 @@ public class IntersectionArray {
 
 		System.out.println(findIntersection(arr1, arr2));
 		System.out.println(intersection(arr1, arr2));
+		System.out.println(IntersectionArray());
 
 	}
 
