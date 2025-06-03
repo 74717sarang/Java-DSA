@@ -2,5 +2,13 @@ package com.newtest;
 
 public interface interfaceA {
 
-	public static void name() {};
+	int a=10;
+
+	// we can not override static methode
+	public static int name() {return 1;}; 
+	public static  void fun() {}; 
+	
+	
+	// compulsary to override
+	public void fum();
 }
