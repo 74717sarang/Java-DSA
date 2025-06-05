@@ -3,8 +3,6 @@ package array;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.swing.plaf.synth.SynthOptionPaneUI;
-
 public class CountOfNumber {
 
 	public static void main(String[] args) {
@@ -12,6 +10,8 @@ public class CountOfNumber {
 		int[] arr = { 1, 2, 2, 3, 1, 4, 2, 4, 5 };
 
 		bruteForcr(arr);
+		System.out.println();
+
 		advance(arr);
 
 	}
