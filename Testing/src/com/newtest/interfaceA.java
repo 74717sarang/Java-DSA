@@ -9,6 +9,9 @@ public interface interfaceA {
 	public static  void fun() {}; 
 	
 	
-	// compulsary to override
+	// compulsory to override
 	public void fum();
+	
+	
+	
 }
