@@ -5,6 +5,9 @@ import java.util.Set;
 
 public class Intersection {
 
+	
+//	Q6: Write a java program to find the intersection of two arrays?
+	
 	public static void main(String[] args) {
 
 		int[] array1 = { 1, 2, 4, 5, 6 };
