@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class CountOfNumber {
 
-//	ite a java program to count occurrences of each element in an array?
+//	write a java program to count occurrences of each element in an array?
 
 	public static void main(String[] args) {
 

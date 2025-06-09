@@ -5,7 +5,7 @@ public class Rotated_palindrome {
 //	Check if a string is a  palindrome or not
 
 	public static boolean isPalidrome(String s) {
-		int left = 0, right = s.length()-1;
+		int left = 0, right = s.length() - 1;
 		while (left < right) {
 			if (s.charAt(right) != s.charAt(left))
 				return false;
@@ -21,7 +21,7 @@ public class Rotated_palindrome {
 		String add = s + s;
 		// Concatenation helps in generating rotations
 
-        // Check all rotations using substrings
+		// Check all rotations using substrings
 		for (int i = 0; i < s.length(); i++) {
 			String rotated = add.substring(i, i + s.length());
 			if (isPalidrome(rotated))
