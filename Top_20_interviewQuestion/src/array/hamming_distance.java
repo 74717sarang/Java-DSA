@@ -37,7 +37,6 @@ public class hamming_distance {
 	                break;
 	            }
 	        }
-
 	        return maxHamming;
 	}
 
