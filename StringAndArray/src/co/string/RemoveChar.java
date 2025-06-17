@@ -8,7 +8,7 @@ public class RemoveChar {
 
 		String str1 = "AABBCC";
 		String str2 = "ABCDDSD";
-		String str = "[" + str2 + "]";
+		String str = "[" + str2 + "]";  //regex create
 		
 
 		str = str1.replaceAll(str, "");

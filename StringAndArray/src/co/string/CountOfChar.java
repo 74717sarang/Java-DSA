@@ -9,8 +9,8 @@ public class CountOfChar {
 
 		String str = "Wwel wel wel";
 
-		// this most efficient way for large input     O(n)
-		
+		// this most efficient way for large input O(n)
+
 		System.out.println("With Map Using ");
 		Map<Character, Integer> map = new HashMap<>();
 		for (int i = 0; i < str.length(); i++) {
@@ -18,17 +18,15 @@ public class CountOfChar {
 			if (map.containsKey(ch)) {
 				int co = map.get(ch);
 				map.put(ch, ++co);
+				map.put(ch, map.get(ch) + 1);
 			} else {
 				map.put(ch, 1);
 			}
 		}
 		map.forEach((k, v) -> System.out.println("Character: " + k + ", Count: " + v));
 
-		
-		
-		//using normal for loop     O(n^2)
-		
-		
+		// using normal for loop O(n^2)
+
 		int[] count = new int[str.length()];
 		char[] arr = str.toCharArray();
 		for (int i = 0; i < arr.length; i++) {
@@ -66,6 +64,33 @@ public class CountOfChar {
 //            }
 //        }
 
-	}
+		System.out.println("new");
+		int cnt;
+		System.out.println();
+//		for(int i=0;i<arr.length;i++) {
+//			cnt=1;
+//			for(int j=i+1;j<arr.length;j++) {
+//				if(arr[i]==arr[j]) {
+//					++cnt;
+////					arr[j]='0';
+//				}
+//			}
+//			if(arr[i]!='0')
+//			System.out.println(arr[i]+" Counts "+cnt);
+//		}
 
+		for (int i = 0; i < arr.length; i++) {
+			cnt = 1;
+			for (int j = i + 1; j < arr.length; j++) {
+				if (arr[i] == arr[j]) {
+					++cnt;
+					arr[j] = '0';
+				}
+			}
+			if (arr[i] != '0') {
+				System.out.println(arr[i]+" Counts "+cnt);
+			}
+		}
+
+	}
 }
