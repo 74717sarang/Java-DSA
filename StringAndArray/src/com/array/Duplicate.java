@@ -1,7 +1,9 @@
 package com.array;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class Duplicate {
 
@@ -36,6 +38,23 @@ public class Duplicate {
 
 	}
 
+	
+	public static void find(int[] arr) {
+		
+		Set<Integer>set=new HashSet<>();;
+		
+		for(int i:arr) {
+			if(set.contains(i)) {
+				System.out.println(i);
+			}
+			set.add(i);
+		}
+		
+		
+	}
+
+	
+	
 	public static void main(String[] args) {
 
 		int n = 10;
@@ -44,6 +63,8 @@ public class Duplicate {
 		findDuplicate(arr, len);
 		System.out.println();
 		findDuplicatewithArray(arr, len);
+		System.out.println();
+		find(arr);
 
 	}
 
