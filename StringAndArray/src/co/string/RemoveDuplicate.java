@@ -18,6 +18,11 @@ public class RemoveDuplicate {
 			}
 			set.add(c);
 
+			// direct
+//			if (set.add(c)) {
+//				result.append(c);
+//			}
+
 		}
 
 		return result.toString();

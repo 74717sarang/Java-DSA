@@ -11,7 +11,8 @@ public class CountOfMaxChar {
 		for (char ch : str.toCharArray()) {
 			if (ch != ' ') {
 				int i = ch - '0' - 48;
-				arr[i] = arr[i] + 1;
+//				arr[i] = arr[i] + 1;
+				arr[i]++;
 				System.out.print(i + " ");
 			}
 		}
