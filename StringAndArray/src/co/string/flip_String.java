@@ -4,7 +4,7 @@ public class flip_String {
 
 	
 	  public static void main(String[] args) {
-	        String sentence = "Flip the words in a sentence";
+	        String sentence = "flip the words in a sentence";
 	  
 	     String[]arr=sentence.split(" ");
 	     String result="";
@@ -13,6 +13,12 @@ public class flip_String {
 	     }
 	  System.out.println(result);
 	  
-	  
+
+	    String r="";
+	     for(int i=0;i<arr.length;i++) {
+	    	 r+=arr[i].substring(0, 1).toUpperCase()+arr[i].substring(1)+" ";
+	     }
+	     System.out.println(sentence);
+	  System.out.println(r);
 	  }
 }

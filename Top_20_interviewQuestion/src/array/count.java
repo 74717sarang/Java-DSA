@@ -47,6 +47,6 @@ public class count {
 				System.out.println("New " + arr[i] + " times max " + frq[i]);
 
 		}
-         System.out.println();
+		System.out.println();
 	}
 }

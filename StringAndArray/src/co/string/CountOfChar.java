@@ -34,12 +34,12 @@ public class CountOfChar {
 			for (int j = i + 1; j < arr.length; j++) {
 				if (arr[i] == arr[j]) {
 					count[i]++;
-					arr[j] = '0';
+					arr[j] = '\0';
 				}
 			}
 		}
 		for (int k = 0; k < arr.length; k++) {
-			if (arr[k] != '0' && arr[k] != ' ') {
+			if (arr[k] != '\0' && arr[k] != ' ') {
 				System.out.println(arr[k] + " " + count[k]);
 			}
 		}
