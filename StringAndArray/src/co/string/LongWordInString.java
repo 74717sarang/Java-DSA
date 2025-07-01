@@ -22,8 +22,10 @@ public class LongWordInString {
 	 	String re = list.stream().max(Comparator.comparingInt(String::length)).orElse("");
 	        
 	
-	 	String s = list.stream().sorted((a,b)->Integer.compare( b.length(),a.length())).findFirst().orElse("");
+//	 	String s = list.stream().sorted((a,b)->Integer.compare( b.length(),a.length())).findFirst().orElse("");
 	
+	 	
+	 	String s=list.stream().sorted().findAny().orElse("");
 	System.out.println("direct  "+s);
 	
 	}
