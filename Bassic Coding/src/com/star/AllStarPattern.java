@@ -79,7 +79,7 @@ public class AllStarPattern {
 		}
 		System.out.println();
 		System.out.println("#################");
-		System.out.println("combine two to make daimond");
+		System.out.println(" combine two to make daimond");
 		// only change the i=row i>=0;i-- first for loop
 		System.out.println();
 
