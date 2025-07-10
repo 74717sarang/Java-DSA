@@ -66,9 +66,85 @@ public class AllStar {
 			}
 			System.out.println();
 		}
+		System.out.println("------  *  -------");
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				if (i <= j)
+					System.out.print("*");
+				else {
+				}
+
+			}
+			System.out.println();
+		}
 		System.out.println("------    -------");
+
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				if (i + j <= n - 1)
+					System.out.print("*");
+				else {
+				}
+
+			}
+			System.out.println();
+		}
 		System.out.println("------    -------");
+
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n - 1 - i; j++) {
+				System.out.print(" ");
+			}
+			int a = 97;
+			for (int k = 0; k < 2 * i + 1; k++) {
+				System.out.printf("%c",  a);
+				if (k < (2 * i + 1) / 2)
+					a++;
+				else {
+					a--;
+				}
+			}
+			System.out.println();
+		}
+		
 		System.out.println("------    -------");
+
+		
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n - 1 - i; j++) {
+				System.out.print(" ");
+			}
+			int a = 1;
+			for (int k = 0; k < 2 * i + 1; k++) {
+				System.out.print(""+
+			a);
+				if (k < (2 * i + 1) / 2)
+					a++;
+				else {
+					a--;
+				}
+			}
+			System.out.println();
+		}
+		
+		System.out.println("------    -------");
+
+		for(int i=1;i<n;i++) {
+//			n=7;
+			for(int j=1;j<i;j++) {
+				System.out.print(j);
+			}
+			System.out.println();
+		}
+		System.out.println();
+		int no=1;
+		for(int i=1;i<n;i++) {
+			for(int j=1;j<i;j++) {
+				System.out.print(no++);
+			}
+			System.out.println();
+		}
+		
 
 	}
 }
