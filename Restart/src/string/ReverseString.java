@@ -7,10 +7,25 @@ public class ReverseString {
 
 //		Reserved string is : anamxal dna amar
 
+		// direct
+//		String rev=new StringBuffer(s).reverse().toString();
+		
 		System.out.println("Reserved string is "+reverse_forLoop(s));
+		System.out.println("Using Extra string "+reverseExtra(s));
 
 	}
 
+	private static String reverseExtra(String s) {
+
+		String extra="";
+		for(int i=s.length()-1;i>=0;i--) {
+			extra+=s.charAt(i);
+		}
+		
+		return extra;
+	}
+
+	// without extra string variable
 	private static String reverse_forLoop(String s) {
 
 		char arr[] = s.toCharArray();

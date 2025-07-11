@@ -13,6 +13,7 @@ public class Palidrome {
 
 //		System.out.println("for loop "+palidrome_forLoop(s));
 		System.out.println("while loop "+palidrome_whileLoop(s));
+		System.out.println("h");
 		System.out.println("stack loop "+Palidrome.palidrome_stackLoop(s));
 //		System.out.println("Hii");
 
