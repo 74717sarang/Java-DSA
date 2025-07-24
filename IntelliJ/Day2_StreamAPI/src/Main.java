@@ -48,13 +48,15 @@ public class Main {
 
         System.out.println("String Sort decending :: ");
         slist.stream()
-                .sorted((a,b)->b.compareTo(a))
+                .sorted((a, b) -> b.compareTo(a))
                 .forEach(System.out::println);
 
-    int sum=list.stream()
-            .mapToInt(i->i)
-            .sum();
-  System.out.println("Sum=  "+sum);
+        int sum = list.stream()
+                .mapToInt(i -> i)
+                .sum();
+        System.out.println("Sum=  " + sum);
+
+
 
     }
 }
