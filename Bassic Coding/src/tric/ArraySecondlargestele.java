@@ -1,6 +1,5 @@
 package tric;
 
-import java.awt.image.SampleModel;
 
 public class ArraySecondlargestele {
 

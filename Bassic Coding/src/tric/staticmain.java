@@ -2,7 +2,7 @@ package tric;
 
 public class staticmain {
 
-	static public void main(String[] args) {  // only sattic is at start
+	static public void main(String[] args) {  // only static is at start
 		System.out.println("hello");
 		main();
 	}
