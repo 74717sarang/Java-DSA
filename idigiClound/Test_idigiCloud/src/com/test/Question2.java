@@ -7,14 +7,18 @@ public class Question2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		 for(;;) {
+	    	   System.out.println("Hii");
+	       }
 	}
 	public boolean sudoko(int[][]arrr) {
 		
      Set<Integer>colSet=new HashSet<>();
-     Set<Integer>rowSet=new  HashSet<>();  
-		
-		return false;
+     Set<Integer>rowSet=new  HashSet<>();
+     
+       for(;;) {
+    	   System.out.println("Hii");
+       }
 	}
 
 }
