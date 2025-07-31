@@ -1,8 +1,5 @@
 package com.test;
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class Question2 {
 	// 9*9 matrix sudoko valid
 	public static void main(String[] args) {
@@ -14,6 +11,8 @@ public class Question2 {
 
 		boolean result = isValidSudoku(board);
 		System.out.println("Is the Sudoku board valid? " + result);
+
+		System.out.println(Sudoku(board));
 	}
 
 	public static boolean isValidSudoku(char[][] arr) {
@@ -29,14 +28,39 @@ public class Question2 {
 					int num = arr[i][j] - '1';
 					int boxIndex = (i / 3) * 3 + (j / 3);
 
-					if(row[i][num] || col[j][num] || box[boxIndex][num]) {
+					if (row[i][num] || col[j][num] || box[boxIndex][num]) {
 						return false;
 					}
-					row[i][num]=true;
-				    col[j][num] =true;
-				    box[boxIndex][num]=true;
+					row[i][num] = true;
+					col[j][num] = true;
+					box[boxIndex][num] = true;
 				}
 
+			}
+		}
+
+		return true;
+	}
+
+	public static boolean Sudoku(char[][] arr) {
+
+		boolean[][] row = new boolean[9][9];
+		boolean[][] box = new boolean[9][9];
+		boolean[][] col = new boolean[9][9];
+
+		for (int i = 0; i < 9; i++) {
+			for (int j = 0; j < 9; j++) {
+				if (arr[i][j] != '.') {
+
+					int num = arr[i][j] - '1';
+					int boxIndex = (i / 3) * 3 + (j / 3);
+					if (row[i][num] || col[j][num] || box[boxIndex][num]) {
+						return false;
+					}
+					row[i][num] = true;
+					col[j][num] = true;
+					box[boxIndex][num] = true;
+				}
 			}
 		}
 
