@@ -53,6 +53,9 @@ public class Question2 {
 				if (arr[i][j] != '.') {
 
 					int num = arr[i][j] - '1';
+					//if char -> int type 
+					// int num=arr[i][j]   direct 
+					// -- num // for start from 0
 					int boxIndex = (i / 3) * 3 + (j / 3);
 					if (row[i][num] || col[j][num] || box[boxIndex][num]) {
 						return false;
