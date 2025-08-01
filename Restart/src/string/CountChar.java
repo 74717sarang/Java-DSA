@@ -22,10 +22,35 @@ public class CountChar {
 			if (arr[i] != '\0')
 				System.out.println("char is " + arr[i] + " Counts " + count[i]);
 		}
-          System.out.println();
+		System.out.println();
 		System.out.println("Use HashMap for Count ");
 		countusingMap(s);
+		System.out.println();
+		countUsingArray(s);
+	}
 
+	private static void countUsingArray(String s) {
+
+		System.out.println("use Array ");
+		int[] count = new int[s.length()];
+		char[] arr = s.toCharArray();
+
+		for (int i = 0; i < arr.length; i++) {
+			count[i] = 1;
+			for (int j = i + 1; j < arr.length; j++) {
+
+				if (arr[i] == arr[j]) {
+					++count[i];
+					arr[j] = '\0';
+				}
+			}
+			if (arr[i] != '\0')
+				System.out.println(arr[i] + " Counts " + count[i]);
+		}
+
+		for (int i = 0; i < arr.length; i++)
+			if (arr[i] != '\0')
+				System.out.println(arr[i] + " Counts " + count[i]);
 	}
 
 	private static void countusingMap(String s) {
