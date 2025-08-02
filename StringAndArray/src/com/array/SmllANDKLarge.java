@@ -6,8 +6,8 @@ public class SmllANDKLarge {
 		int[] arr = { 4, 5, 6, 1, 2, 3, 9 };
 
 		int large = Integer.MIN_VALUE;
-		int small = Integer.MAX_VALUE;
-
+		int small =   Integer.MAX_VALUE;
+  
 		int l = arr[0], s = arr[0];
 		for (int i : arr) {
 			if (i > l) {
