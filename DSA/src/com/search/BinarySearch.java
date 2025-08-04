@@ -11,7 +11,7 @@ public class BinarySearch {
 		 
 		 while(left<=right) {
 			
-			 int mid=left+(right-left)/2;
+			 int mid=left+(right-left)/2;  // to handle value in rang of Integer for large array
 			
 			 if(arr[mid]==target) {
 				 return mid;
